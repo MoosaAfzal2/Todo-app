@@ -18,7 +18,7 @@ export default function Home() {
         <div className="flex justify-center">
           {/* @ts-expect-error Server Component */}
           <TodoList />
-          <ResetTodos />
+          {/* <ResetTodos /> */}
         </div>
       </div>
     </>
