@@ -2,15 +2,6 @@
 
 import { useRouter } from "next/navigation";
 
-async function UpdateTodo(id: string, isDone: boolean, refresh: () => void) {
-    await fetch('https://todo-api-t7yv.vercel.app/api/todo/update', {
-        method: "POST",
-        mode: "no-cors",
-        body: JSON.stringify({ id, isDone })
-    });
-    refresh()
-}
-
 async function DeleteTodo(id: string, refresh: () => void) {
     await fetch(`/api/todo/delete?id=${id}`, {
         method: "DELETE"
@@ -18,13 +9,11 @@ async function DeleteTodo(id: string, refresh: () => void) {
     refresh()
 }
 
-
 export default function Todo({ todo }: { todo: { id: string, name: string, isDone: boolean } }) {
     const router = useRouter()
     return (
         <>
             <div className="flex flex-row group">
-                {/* <input checked={todo.isDone} type="checkbox" onChange={(e) => { UpdateTodo(todo.id, e.target.checked, router.refresh) }} /> */}
                 <div className={`font-sans font-medium
                 w-[19.5rem] h-8 bg-white rounded-sm mb-3 p-1 pl-2
                 duration-500 transition ease-in-out

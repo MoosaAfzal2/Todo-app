@@ -1,9 +1,8 @@
-import { Dancing_Script, Lato } from '@next/font/google'
+import { Dancing_Script } from '@next/font/google'
 import ResetTodos from './components/reset'
 import TodoList from './components/Todo_List'
 
 const Dancing = Dancing_Script({ subsets: ['latin'], style: "normal", weight: "700" })
-const lato = Lato({ subsets: ['latin'], style: "normal", weight: "400" })
 
 export default function Home() {
   return (
