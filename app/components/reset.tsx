@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 
 let condition = true
-export async function Reset(refresh: () => void) {
+async function Reset(refresh: () => void) {
     await fetch('https://todo-api-t7yv.vercel.app/api/todo/reset', {
         method: "POST",
         mode: "no-cors",
