@@ -2,7 +2,7 @@ import AddTodo from "./Add_Todo";
 import Todo from "./Todo";
 
 async function GetTodos() {
-    const res = await fetch("https://todo-api-t7yv.vercel.app/api/todo/list");
+    const res = await fetch("https://todo-api-t7yv.vercel.app/api/todo/list", { cache: "no-store" });
     return res.json();
 }
 
