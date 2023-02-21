@@ -26,7 +26,7 @@ export default function Todo({ todo }: { todo: { id: string, name: string, isDon
                     className="bg-violet-600 mt-[-1px] ml-[7px] rounded-full
                 duration-500 transition ease-in-out
                 w-[2.1rem] h-[2.1rem] opacity-0 group-hover:opacity-100">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-x" width="100%" height="85%" viewBox="0 0 24 24" stroke-width="4" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-x" width="100%" height="85%" viewBox="0 0 24 24" strokeWidth="4" stroke="white" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <line x1="18" y1="6" x2="6" y2="18" />
                         <line x1="6" y1="6" x2="18" y2="18" />
